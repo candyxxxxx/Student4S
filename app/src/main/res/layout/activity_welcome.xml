@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools1="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools1:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/welcome_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="70dp"
+        android:src="@drawable/login_icon"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/welcome_text_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="@string/slogan"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--/>-->
+
+</LinearLayout>
+

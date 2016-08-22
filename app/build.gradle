@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "shushuxu.cityu.com.sensordatatest"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile project(':SensorManager')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/ziputils-1.1.jar')
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'me.yokeyword:fragmentation:0.7.7'
+    compile 'me.yokeyword:fragmentation-swipeback:0.3.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.google.android.gms:play-services-location:9.2.1'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/guava-r09.jar')
+    compile files('libs/sqlcipher.jar')
+    compile files('libs/commons-codec.jar')
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+    compile files('libs/fastjson.jar')
+}

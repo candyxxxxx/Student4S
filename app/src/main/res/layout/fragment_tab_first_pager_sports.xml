@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@drawable/sports">
+        <TextView
+            android:id="@+id/probe_separator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sports"
+            android:textSize="20sp"
+            android:textColor="@color/bg_app"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Detect your daily physical exercise like running, walking."
+            android:textSize="15sp"
+            android:textColor="@color/bg_app"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/probe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Physical activity"
+            android:layout_weight="3"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sports_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Enabled"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/sportsCheckbox"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>
